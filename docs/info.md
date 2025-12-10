@@ -9,12 +9,24 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+The function outputs 1 when one of the following is true:
+
+A and B are both 1 (the term AB)
+
+C is 0 (the term C')
+
+So even if A and B are not both 1, the function will still output 1 anytime C = 0. The only time the output is 0 is when C = 1 and A and B are not both 1.
 
 ## How to test
+Truth Table of F=AB+C'
 
-Explain how to use your project
-
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+| A | B | C | AB | C' | F |
+| - | - | - | -- | -- | - |
+| 0 | 0 | 0 | 0  | 1  | 1 |
+| 0 | 0 | 1 | 0  | 0  | 0 |
+| 0 | 1 | 0 | 0  | 1  | 1 |
+| 0 | 1 | 1 | 0  | 0  | 0 |
+| 1 | 0 | 0 | 1  | 1  | 1 |
+| 1 | 0 | 1 | 1  | 0  | 0 |
+| 1 | 1 | 0 | 0  | 1  | 1 |
+| 1 | 1 | 1 | 0  | 0  | 1 |
